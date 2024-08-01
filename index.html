@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Decodificador de Textos, por Johnny Hamano - Oracle Next Education</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="./styles/style.css">
+	</head>
+
+	<body>
+		<main id="encryptor">
+			<section id="encryptor-input">
+				<textarea id="encryptor-input__textarea" placeholder="Digite seu texto"></textarea>
+				
+				<div id="encryptor-input__buttons">
+					<div>
+						<button id="btn-criptografar" class="converter-button">
+							Criptografar
+						</button>
+
+						<button id="btn-descriptografar" class="converter-button">
+							Descriptografar
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="encryptor-output" data-display="open">
+				<div id="encryptor-output__default">
+					<img src="./assets/images/cryptography.png" alt="Imagem de um cadeado criptografado com números binários">
+					<h2>Como funciona: </h2>
+					<p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+					<p>Utilize apenas letras minúsculas e sem acento.</p>
+				</div>
+
+				<div id="encryptor-output__text" class="output-result">
+					<button class="btn-fechar">
+						<img src="./assets/images/btn-close.jpg" alt="Botão fechar">
+					</button>
+
+					<div>
+						<h2>Resultado: </h2>
+						<p id="encryptor-output__text__content"></p>
+					</div>
+					
+					<button id="btn-copiar">
+						Copiar
+					</button>
+				</div>
+
+				<div id="encryptor-output__empty" class="output-result">
+					<button class="btn-fechar">
+						<img src="./assets/images/btn-close.jpg" alt="Botão fechar">
+					</button>
+
+					<img src="./assets/images/image.svg" alt="Imagem de uma pessoa olhando um diamante através de uma lupa">
+
+					<h2>Nenhuma mensagem encontrada</h2>
+					<p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+				</div>
+
+				<div id="encryptor-output__error" class="output-result">
+					<button class="btn-fechar">
+						<img src="./assets/images/btn-close.jpg" alt="Botão fechar">
+					</button>
+
+					<img src="./assets/images/cryptography-error.png" alt="Imagem de uma pessoa olhando um diamante através de uma lupa">
+					
+					<h2>Erro:</h2>
+					<p>Utilize apenas letras minúsculas e sem acento.</p>
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<span>Desenvolvido por <strong>Johnny Hamano</strong>.</span>
+			<a href="https://github.com/JohnnyHamano" target="_blank">
+				<img src="./assets/images/logo-github.png" alt="Logo do GitHub" title="GitHub">
+			</a>
+			<a href="https://www.linkedin.com/in/johnnyhamano/" target="_blank">
+				<img src="./assets/images/logo-linkedin.png" alt="Logo do LinkedIn" title="LinkedIn">
+			</a>
+		</footer>
+
+		<div id="user-interface">
+			<div id="toast"></div>
+		</div>
+
+		<script type="text/javascript" src="./scripts/default.js"></script>
+	</body>
+</html>
